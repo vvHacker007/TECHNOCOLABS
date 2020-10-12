@@ -35,23 +35,23 @@ def main():
     def format_func_repay(option):
         return CHOICES_REPAY[option]
 
-    LIMIT_BAL = st.text_input("LIMIT_BAL","500")
+    LIMIT_BAL = st.text_input("LIMIT_BAL","")
     EDUCATION = st.selectbox("Select your Education Level",options=list(CHOICES_EDUCATE.keys()), format_func=format_func_edu)
     MARRIAGE = st.selectbox("Marital Status",options=list(CHOICES_MARRIAGE.keys()), format_func=format_func_marry)
-    AGE = st.text_input("Age(in Years)","50")
+    AGE = st.text_input("Age(in Years)","")
     PAY_1 = st.selectbox("Repayment Status",options=list(CHOICES_REPAY.keys()), format_func=format_func_repay)
-    BILL_AMT1 = st.text_input("Last month Bill Amount","50")
-    BILL_AMT2 = st.text_input("Last 2nd month Bill Amount","50")
-    BILL_AMT3 = st.text_input("Last 3rd month Bill Amount","50")
-    BILL_AMT4 = st.text_input("Last 4th month Bill Amount","50")
-    BILL_AMT5 = st.text_input("Last 5th month Bill Amount","50")
-    BILL_AMT6 = st.text_input("Last 6th month Bill Amount","50")
-    PAY_AMT1 = st.text_input("Amount paid in Last Month","50")
-    PAY_AMT2 = st.text_input("Amount paid in Last 2nd Month","50")
-    PAY_AMT3 = st.text_input("Amount paid in Last 3rd Month","50")
-    PAY_AMT4 = st.text_input("Amount paid in Last 4th Month","50")
-    PAY_AMT5 = st.text_input("Amount paid in Last 5th Month","50")
-    PAY_AMT6 = st.text_input("Amount paid in Last 6th Month","50")
+    BILL_AMT1 = st.text_input("Last month Bill Amount","")
+    BILL_AMT2 = st.text_input("Last 2nd month Bill Amount","")
+    BILL_AMT3 = st.text_input("Last 3rd month Bill Amount","")
+    BILL_AMT4 = st.text_input("Last 4th month Bill Amount","")
+    BILL_AMT5 = st.text_input("Last 5th month Bill Amount","")
+    BILL_AMT6 = st.text_input("Last 6th month Bill Amount","")
+    PAY_AMT1 = st.text_input("Amount paid in Last Month","")
+    PAY_AMT2 = st.text_input("Amount paid in Last 2nd Month","")
+    PAY_AMT3 = st.text_input("Amount paid in Last 3rd Month","")
+    PAY_AMT4 = st.text_input("Amount paid in Last 4th Month","")
+    PAY_AMT5 = st.text_input("Amount paid in Last 5th Month","")
+    PAY_AMT6 = st.text_input("Amount paid in Last 6th Month","")
     safe_html="""  
       <div style="background-color:#F4D03F;padding:10px >
        <h2 style="color:white;text-align:center;"> This account will not be defaulted with a probablity of</h2>
